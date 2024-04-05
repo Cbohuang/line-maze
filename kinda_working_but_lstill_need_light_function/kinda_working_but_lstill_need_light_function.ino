@@ -525,3 +525,37 @@ void activationWait() {
   delay(1000);
   setPixlsGreen();
 }
+
+//Lights
+void setPixlsRed() {
+  pixels.setPixelColor(0, pixels.Color(0, BRIGHTNES_LEVEL, 0));
+  pixels.setPixelColor(1, pixels.Color(0, BRIGHTNES_LEVEL, 0));
+  pixels.setPixelColor(2, pixels.Color(0, BRIGHTNES_LEVEL, 0));
+  pixels.setPixelColor(3, pixels.Color(0, BRIGHTNES_LEVEL, 0));
+  pixels.show();
+}
+
+void setPixlsGreen() {
+  pixels.setPixelColor(0, pixels.Color(BRIGHTNES_LEVEL, 0, 0));
+  pixels.setPixelColor(1, pixels.Color(BRIGHTNES_LEVEL, 0, 0));
+  pixels.setPixelColor(2, pixels.Color(BRIGHTNES_LEVEL, 0, 0));
+  pixels.setPixelColor(3, pixels.Color(BRIGHTNES_LEVEL, 0, 0));
+  pixels.show();
+}
+
+void setPixlsYellow() {
+  pixels.setPixelColor(0, pixels.Color(BRIGHTNES_LEVEL, BRIGHTNES_LEVEL, 0));
+  pixels.setPixelColor(1, pixels.Color(BRIGHTNES_LEVEL, BRIGHTNES_LEVEL, 0));
+  pixels.setPixelColor(2, pixels.Color(BRIGHTNES_LEVEL, BRIGHTNES_LEVEL, 0));
+  pixels.setPixelColor(3, pixels.Color(BRIGHTNES_LEVEL, BRIGHTNES_LEVEL, 0));
+  pixels.show();
+}
+
+void setPixlsBlue() {
+  pixels.setPixelColor(0, pixels.Color(0, 0, BRIGHTNES_LEVEL));
+  pixels.setPixelColor(1, pixels.Color(0, 0, BRIGHTNES_LEVEL));
+  pixels.setPixelColor(2, pixels.Color(0, 0, BRIGHTNES_LEVEL));
+  pixels.setPixelColor(3, pixels.Color(0, 0, BRIGHTNES_LEVEL));
+  pixels.show();
+}
+
